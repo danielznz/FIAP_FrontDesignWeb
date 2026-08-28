@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: #007981;
+    padding: 10px;
+}
