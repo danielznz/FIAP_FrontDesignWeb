@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 - Forms</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f0f2f5;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    input {
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h1 {
+        color: #1a1a1a;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #e4e6eb;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: #4a4a4a;
+        font-size: 16px;
+        margin: 20px 0 12px 0;
+    }
+
+    .options-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+
+    label {
+        color: #333;
+        font-size: 15px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .img {
+        width: 500px;
+    }
+</style>
+
+
+<body>
+    <h1>Form de Cadastro</h1>
+    <hr>
+
+    <form action="">
+        <h3>Selecione o seu genero: </h3>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite aqui..."><br><br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="exemplo@email.com"><br><br><br>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" placeholder="mínimo de 6 digitos"><br><br><br>
+
+
+            <input type="radio" name="genero" id="genero" value="m"><label for="genero">Masculino</label><br>
+            <input type="radio" name="genero" id="genero" value="f"><label for="genero">Feminino</label><br>
+            <input type="radio" name="genero" id="genero" value=""><label for="genero">Outros</label><br>
+            <!--Type, tipo de dado--><br><br>
+            <input type="checkbox" name="transporte" id="transporte" value="carro">
+            <label for="transporte">Carro</label><br>
+            <input type="checkbox" name="transporte" id="transporte" value="moto">
+            <label for="transporte">Moto</label><br>
+            <input type="checkbox" name="transporte" id="transporte" value="trem">
+            <label for="transporte">Trem</label><br>
+            <input type="checkbox" name="transporte" id="transporte" value="metro">
+            <label for="transporte">Metro</label><br>
+
+            <h3>Selecione o seu presidente favorito</h3>
+            <select name="" id="">
+                <option value="Lula">Lula</option>
+                <option value="Bolsonaro">Bolsonaro</option>
+                <option value="Dilma">Dilma</option>
+                <option value="Opção04">Opção 04</option>
+            </select>
+
+            <textarea name="opiniao" placeholder="Deixe sua opinião..."></textarea>
+
+            <br> <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+            <h4></h4>
+            <div align="center">
+                <img class="img" src="img/abel.webp" alt="img">
+            </div>
+
+            <a href="https://www.fiap.com.br" target="_blank">
+                <img src="img/abel.webp" alt="abel_chutando_mic" width="60px">
+            </a>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zmT-eV4VOe4?si=-dxpZNZM0dSkABM3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>
