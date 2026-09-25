@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+div {
+    background-color: #ccc;
+    width: 100px;
+    height: 160px;
+    border: 2px solid #000000;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    /* primeiro valor para cima e baixo, segundo para os lados */
+    overflow: auto;
+    /* margin: 1px 2px 1px 2px; */
+    /* primeiro valor para cima, depois direita, baixo e equerda */
+    padding: 3px 15px;
+    padding-bottom: 50px;
+    border-left: dashed 4px red;
+    border-top: dotted 4px blue;
+    border-radius: 1rem;
+}
+
+p {
+    background-color: yellow;
+}
+
+span {
+    background-color: green;
+    display: block;
+}
