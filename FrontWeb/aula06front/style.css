@@ -1,0 +1,88 @@
+* {
+    background-color: #f2f2f2;
+}
+
+div {
+    color: red;
+}
+
+div:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ccc;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+input:focus {
+    background-color: rgb(199, 199, 199);
+}
+
+li:first-child {
+    color: rgb(43, 135, 255);
+}
+
+li:last-child {
+    color: green;
+}
+
+/* pega os impares, e (2n+3) um jeito de pegar por ordem */
+li:nth-child(even) {
+    color: aqua;
+}
+
+.luiz {
+    height: 150px;
+    width: 150px;
+    transition: ease-in;
+}
+
+.luiz:hover {
+    height: 150px;
+    width: 150px;
+    transform: rotate3d(100, 100, 90, 45deg);
+}
+
+li:not(.esseNao) {
+    color: aqua;
+}
+
+:checked {
+    margin-left: 40px;
+    color: aqua;
+}
+
+/* 
+input[type='radio']:checked{
+
+} */
+
+input[type='email']:valid {
+    background-color: green;
+}
+
+input[type='email']:invalid {
+    background-color: rgb(255, 137, 19);
+
+}
+
+/* input[type='email']:disabled {
+    background-color: rgb(255, 137, 19);
+} */
+
+p::first-letter {
+    font-size: 36px;
+}
+
+p::selection {
+    background-color: blue;
+}
+
+::placeholder {
+    color: #ff0000;
+}
